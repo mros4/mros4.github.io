@@ -157,15 +157,3 @@ function atura() {
   </script>
 </body>
 </html>
-
-let temps = 0;
-let interval;
-function inicia() {
-  interval = setInterval(() => {
-    temps++;
-    document.getElementById('temps').innerText = temps;
-  }, 1000);
-}
-function atura() {
-  clearInterval(interval);
-}
