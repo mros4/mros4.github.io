@@ -119,6 +119,18 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js/"></script>
   <script> 
 
+
+    let temps = 0;
+let interval;
+function inicia() {
+  interval = setInterval(() => {
+    temps++;
+    document.getElementById('temps').innerText = temps;
+  }, 1000);
+}
+function atura() {
+  clearInterval(interval);
+}
 }   
     function canvia() {
 let valor = 0;
