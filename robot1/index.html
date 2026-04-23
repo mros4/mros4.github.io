@@ -219,22 +219,31 @@ const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecogni
 const recognition = new SpeechRecognition();
 recognition.lang = "ca-ES";
 
-// DICCIONARI SIMPLIFICAT (només 10 paraules)
+// DICCIONARI SIMPLIFICAT (només 20 paraules)
 const diccionariSentiments = {
-    // Paraules positives (6 paraules)
+    // Paraules positives ( paraules)
     "bo": 2,
     "bé": 2,
     "content": 2,
     "contenta": 2,
     "feliç": 3,
     "fantàstic": 3,
+    "increible": 4,
+    "alucinant": 4,
+    "asombrós": 4,
+    "Exel·lent": 5,
+    
     
     // Paraules negatives (5 paraules)
     "dolent": -2,
     "malament": -2,
     "trist": -2,
     "horrible": -3,
-    "problema": -1
+    "problema": -1,
+    "inútil": -4,
+    "desgraciat": -4,
+    "suspés": -4,
+  
 };
 
 function analitzarSentiment(text) {
